@@ -14,10 +14,10 @@ const ContactForm = ({ onAddContact }) => {
       .required("Required"),
   });
 
-  const handleSubmit = (values, { resetForm }) => {
-    onAddContact({ id, ...values });
-    resetForm();
-  };
+ const handleSubmit = (values, actions) => {
+  onAddContact({ id, ...values });
+  actions.resetForm();
+};
 
   return (
     <Formik initialValues={initialValues} validationSchema={validationSchema} onSubmit={handleSubmit}>
