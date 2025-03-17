@@ -12,4 +12,3 @@ const ContactList = ({ contacts, onDelete }) => {
 };
 
 export default ContactList;
-

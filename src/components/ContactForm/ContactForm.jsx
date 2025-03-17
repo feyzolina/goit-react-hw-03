@@ -9,7 +9,7 @@ const ContactForm = ({ onAddContact }) => {
   const initialValues = { name: "", number: "" };
 
   const validationSchema = Yup.object({
-    name: Yup.string().min(3, "Minimum 3 karakter").max(50, "Maksimum 50 karakter").required("Zorunlu alan"),
+    name: Yup.string().min(3, "Minimum 3 character").max(50, "Maximum 50 character").required("required"),
     number: Yup.string()
       .required("Required"),
   });
