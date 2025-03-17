@@ -4,9 +4,9 @@ import styles from "./ContactList.module.css";
 const ContactList = ({ contacts, onDelete }) => {
   return (
     <ul className={styles.list}>
-      {contacts.map((contact) => (
-        <ContactItem key={contact.id} contact={contact} onDelete={onDelete} />
-      ))}
+     {contacts.map((contact) => (
+  <ContactItem key={contact.id} contact={contact} onDelete={onDelete} />
+))}
     </ul>
   );
 };
